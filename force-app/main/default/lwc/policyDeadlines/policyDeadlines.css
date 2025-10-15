@@ -1,0 +1,23 @@
+.slds-p-around_medium {
+    padding: 1rem;
+}
+lightning-datatable {
+    --lwc-tableBorderColor: #ccc;
+    --lwc-tableHeaderBackgroundColor: #f4f6f9;
+}
+.urgent-row {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe6e6
+}
+.policy-table .slds-text-color_error {
+    color: #c23934; /* Ensure error text is red */
+    font-weight: bold;
+}
+lightning-button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+lightning-button {
+    margin: 0 0.5rem;
+}

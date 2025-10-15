@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Policy Deadlines" icon-name="standard:task">
+        <div class="slds-p-around_medium">
+            <template if:true={hasDeadlines}>
+                <lightning-datatable
+                    key-field="id"
+                    data={paginatedDeadlines}
+                    columns={columns}
+                    onsort={handleSort}
+                    onrowaction={handleRowAction}
+                    hide-checkbox-column="true"
+                    class="policy-table">
+                </lightning-datatable>
+
+                <div class="slds-m-top_small slds-grid slds-grid_align-spread">
+                    <lightning-button label="Previous" onclick={handlePrev} disabled={isPrevDisabled}></lightning-button>
+                    <lightning-button label="Next" onclick={handleNext} disabled={isNextDisabled}></lightning-button>
+                </div>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">{error}</p>
+            </template>
+
+            <template if:true={noDataAndNoError}>
+                <p>No deadlines found.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

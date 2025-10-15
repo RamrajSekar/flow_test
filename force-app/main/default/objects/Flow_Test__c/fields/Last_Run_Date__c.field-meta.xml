@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Run_Date__c</fullName>
+    <externalId>false</externalId>
+    <label>Last Run Date</label>
+    <summarizedField>Flow_Test_Result__c.Run_Date_Time__c</summarizedField>
+    <summaryForeignKey>Flow_Test_Result__c.Flow_Test__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
